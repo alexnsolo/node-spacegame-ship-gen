@@ -1,3 +1,5 @@
+var nameGenerator = require('./nameGenerator');
+
 exports.generateCargoHold = function() {
     var subsystem = {
         type: 'cargohold',
@@ -13,10 +15,10 @@ exports.generateCargoHold = function() {
 exports.generateMiningLaser = function() {
     var subsystem = {
         type: 'mining_laser',
-        description: 'Dalton ML-1300',
+        description: nameGenerator.generateMiningLaserName(),
         health: 100,
         mining: {
-            power: 12
+            power: Math.floor(Math.random() * 12) + 5
         }
     };
     return subsystem;
@@ -25,10 +27,10 @@ exports.generateMiningLaser = function() {
 exports.generateSublightEngine = function() {
     var subsystem = {
         type: 'sublight',
-        description: 'Quicksilver Dasher',
+        description: nameGenerator.generateEngineName(),
         health: 250,
         thrust: {
-            power: 45
+            power: Math.floor(Math.random() * 35) + 20
         }
     };
     return subsystem;

@@ -1,9 +1,9 @@
-var shipNameGenerator =	    require('./shipNameGenerator.js');
-var subsystemGenerator =	require('./subsystemGenerator.js');
+var nameGenerator =	require('./nameGenerator.js');
+var subsystemGenerator = require('./subsystemGenerator.js');
 
 exports.generateShip = function() {
     var ship = {
-        name: shipNameGenerator.generateShipName(),
+        name: nameGenerator.generateShipName(),
         health: 1450,
         subsystems: [
             subsystemGenerator.generateCargoHold(),
