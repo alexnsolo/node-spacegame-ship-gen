@@ -4,6 +4,7 @@
   "description": "0.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/civilframe/node-spacegame-ship-gen/issues"
   },
-  "homepage": "https://github.com/civilframe/node-spacegame-ship-gen"
+  "homepage": "https://github.com/civilframe/node-spacegame-ship-gen",
+  "devDependencies": {
+    "prettyjson": "^1.0.0"
+  }
 }
